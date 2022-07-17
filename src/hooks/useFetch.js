@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetch = (url) => {
+export const useFetch = (url) => {
   const [quote, setQuote] = useState({
     data: null,
     isLoading: true,
@@ -40,5 +40,3 @@ const useFetch = (url) => {
     ...quote,
   };
 };
-
-export default useFetch;
