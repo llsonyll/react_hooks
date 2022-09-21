@@ -5,6 +5,7 @@ export const useForm = (initialState = {}) => {
 
   return {
     formState,
+    ...formState,
     onInputChange: ({ target: { value, name } }) =>
       setFormState({
         ...formState,
